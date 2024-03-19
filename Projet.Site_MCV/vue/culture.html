@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture</title>
+    <script src="s.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <a href="aa.html">
+        <img src="logo.png" alt="Logo de notre site" class="logo">
+      </a>
+        <h1>Paris ville culturelle</h1>
+        <nav>
+            <ul>
+                <li><a href="aa.html">Accueil</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="gastronomie.html">Gastronomie </a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+    <section class="parallax">
+      <h1 id="title">Tout savoir sur l’offre culturelle parisienne : bibliothèques, conservatoires, archives, ateliers des beaux arts...</h1>
+      <img src="paris.jpg" id="paris" aria-label="L'image de paris"  />
+    </section>
+
+
+    <section>
+      <article class="bibi">
+          <P1>"Les meilleures bibliothèques parisiennes"</P1>
+          <h3>Bibliothèque Sainte-Geneviève</h3>
+          <a href="https://www.bsg.univ-paris3.fr/iguana/www.main.cls"> <img src="bi.webp" alt="Image de la Bibliothèque"></a>
+          <p>la Bibliothèque nationale de France interpelle autant par ses tours, des livres ouverts se regardant en chiens de faïence imaginés par Dominique Perrault, que par son impressionnant fonds de documents. Un paradis de 15 millions d'archives touchant à toutes les disciplines, réparti sur 3 000 places entre le haut-de-jardin, accessible à tous, et le rez-de-jardin, royaume des chercheurs. </p>
+          <button class="mon-bouton" data-address="Quai François-Mauriac, Paris 13e">L'adresse</button>
+          <div class="mon-alerte" role="alert"></div>
+      </article>
+  
+      <article>
+          <h3>Bibliothèque nationale de France (Site Richelieu)</h3>
+          <a href="https://www.bnf.fr/fr"><img src="bi2.webp" alt="Image de la Bibliothèque"> </a>
+          <p>Après des années de coûteux travaux, le site Richelieu, le berceau tricentenaire de la BnF situé dans le 2e, a rouvert ses portes en 2022. Outre la refonte architecturale et le nouveau musée, c’est surtout la monumentale salle Ovale de lecture, avec ses 18 mètres de hauteur coiffés d’une verrière, qui attire les regards et les lecteurs. </p>
+          <button class="mon-bouton" data-address="58 rue de Richelieu, Paris 2e">L'adresse</button>
+          <div class="mon-alerte" role="alert"></div>
+      </article>
+  
+      <article>
+          <h3>Bibliothèque interuniversitaire de la Sorbonne (BIS)</h3>
+          <a href="https://www.bis-sorbonne.fr/biu/"> <img src="bi3.webp" alt="Image de la Bibliothèque"></a>
+          <p>Une des plus vieilles et mythiques universités du monde pour l’une des plus belles bibliothèques de la capitale. Refaite au tournant des années 2010, la bibliothèque interuniversitaire de la Sorbonne et ses 250 ans au compteur (depuis 2020) détient près de 2 millions de documents imprimés, majoritairement en lettres et sciences humaines. Bémol : l’accès est coordonné au niveau d’études (L3 minimum), à la discipline suivie et à l’université de rattachement.</p>
+          <button class="mon-bouton" data-address="17, rue de la Sorbonne, Paris 5e">L'adresse</button>
+          <div class="mon-alerte" role="alert"></div>
+      </article>
+
+      <article>
+        <h3>Bibliothèque Publique d'Information</h3>
+        <a href="https://www.bpi.fr/"><img src="bi4.jpg" alt="Image de la Bibliothèque"> </a>
+        <p>Implantée au sein du Centre Georges-Pompidou, 10 400 mètres carrés de salles de lecture sur trois niveaux, abritant pas moins de 430 000 documents, dont 370 000 bouquins. Une vie ne suffirait pas à tout lire. Le catalogue de la BPI se démarque également avec son fonds cinéma documentaire, ses cartes et plans ainsi que ses ressources liées au son. </p>
+        <button class="mon-bouton" data-address="Place Georges-Pompidou, Paris 4e.">L'adresse</button>
+        <div class="mon-alerte" role="alert"></div>
+    </article>
+  </section>
+  
+  <script>
+      let monBoutons = document.querySelectorAll('.mon-bouton');
+  
+      monBoutons.forEach((bouton) => {
+          bouton.addEventListener('click', afficherAlerte);
+      });
+  
+      function afficherAlerte(event) {
+          let monAlerte = event.target.nextElementSibling;
+          let contenuAlerte = event.target.dataset.address;
+  
+          monAlerte.innerHTML = `<p>Où ? ${contenuAlerte}</p>`;
+      }
+  </script>
+  
+      </article>
+  </section>
+
+
+  
+    <section class="blog">
+      <p>Les Archives à Paris</p>
+      <p>Plongez dans l'histoire fascinante de Paris en explorant ses archives riches en informations et en témoignages. Des documents précieux, des photographies d'archives et des artefacts vous permettent de remonter le temps et de découvrir les moments clés de l'histoire de la ville lumière.</p>
+      <div class="cards">
+        <p>Les Archives Nationales</p>
+        <div class="card">
+          <img src="ar.png" alt="Les Archives Nationales" />
+          <div class="overlay">
+            <h3>Les Archives Nationales</h3>
+            <p>établissement du ministère de la Culture, sont le plus grand centre d'archives d'Europe. Mémoire de la France, elles conservent et communiquent aux publics les archives de l'État depuis le Moyen Age, celles des notaires parisiens et des archives privées d'intérêt national.
+            </p>
+          </div>
+        </div>
+        
+        <p>Archives de la Ville de Paris</p>
+        <div class="card">
+          <img src="ar1.JPG" alt="Les Archives de Paris" />
+          <div class="overlay">
+            <h3>Archives de la Ville de Paris</h3>
+            <p>Les Archives de Paris mettent à votre disposition un peu plus de 21,7 millions de pages de documents et d'images.
+              Pour bien utiliser les outils de consultation mis à votre disposition, reportez-vous à la rubrique aide. Les présentations en tête de chaque formulaire de recherche vous renseignent précisément sur les contenus mis en ligne.
+            </p>
+          </div>
+        </div>
+        
+        <p>Archives de l'Université de Paris</p>
+        <div class="card">
+          <img src="ar2.jpg" alt="Les Archives de Paris" />
+          <div class="overlay">
+            <h3>Archives de l'Université de Paris</h3>
+            <p>Les Archives de l'Université de Paris constituent une autre ressource précieuse pour les chercheurs et les passionnés d'histoire. Conservant des documents relatifs à la prestigieuse université depuis ses débuts médiévaux, ces archives offrent un aperçu fascinant de l'évolution de l'éducation et du savoir à travers les âges.
+            </p>
+          </div>
+        </div>
+
+       
+      </div>
+  
+      <p>
+        En explorant ces archives remarquables, nous pouvons plonger dans les récits riches et variés qui façonnent l'identité de Paris et de sa communauté.🏝️✨
+      </p>
+    </section>
+
+    <section class="paralla">
+      <article class="musique">
+          <h3>Le Conservatoire National Supérieur de Musique et de Danse de Paris (CNSMDP)</h3>
+          <h3>↓..............................................................................↓</h3>
+          <p>Cliquez sur l'image ci-dessous pour accéder au site du Conservatoire de Musique.</p>
+          <a href="Conservatoire.html">
+          <img src="ecole.jpg" alt="Images du Conservatoire National Supérieur de Musique et de Danse de Paris (CNSMDP)">
+          </a>
+
+      </article>
+    </section>
+
+
+    <section class="parall">
+      <article class="beaux-arts">
+          <h3>L'École Nationale Supérieure des Beaux-Arts (ENSBA)</h3>
+          <p>Fondée en 1648, l'École Nationale Supérieure des Beaux-Arts (ENSBA) est l'une des écoles d'art les plus prestigieuses au monde, offrant des formations en arts plastiques, en sculpture, en peinture, en gravure, etc.</p>
+          <h3>↓..............................................................................↓</h3>
+          <p>Cliquez sur l'image ci-dessous pour accéder au site des Beaux-Arts.</p>
+          <a href="arts.html">
+              <img src="arts.jpeg" alt="Images de l'École Nationale Supérieure des Beaux-Arts (ENSBA)">
+          </a>
+      </article>
+  </section>
+  
+
+</section>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Lei Wei. La page culture</p>
+</footer>
+  </body>
+  </html>

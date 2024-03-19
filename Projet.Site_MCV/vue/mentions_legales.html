@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <script src="../assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.118.2">
+  <title>Mentions légales</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+
+    .bouton-marge {
+      margin-bottom: 15px;
+      
+    }
+
+    main {
+      flex: 1;
+      /* Fait en sorte que le contenu de la page prenne tout l'espace disponible */
+      padding: 30px;
+    }
+
+
+    footer {
+      background-color: #000;
+      /* Fond noir pour le footer */
+      color: #fff;
+      /* Couleur du texte dans le footer */
+      padding: 10px;
+      text-align: center;
+      bottom: 0;
+      /* Aligner le bas du footer avec le bas de la fenêtre */
+      left: 0;
+      /* Aligner le côté gauche du footer avec le côté gauche de la fenêtre */
+      right: 1;
+      /* Aligner le côté droit du footer avec le côté droit de la fenêtre */
+      width: calc(100% - 40px);
+      /* Largeur du bandeau du footer, ajustable selon vos besoins */
+      margin: 0 auto;
+      /* Centrer le footer horizontalement */
+    }
+
+    
+    .nav-item {
+      display: inline-block;
+      /* Affiche les éléments li en ligne */
+      margin-right: 10px;
+      /* Espacement entre les éléments */
+
+    }
+
+    .button-container button {
+      display: inline-block;
+      /* Pour placer les boutons en ligne */
+      margin-right: 10px;
+      /* Espacement entre les boutons */
+    }
+    
+    strong {
+      color: black;
+    }
+      
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/photos/logo.png"></a> 
+        <a href="index.html">
+        <img src="/photos/logo.png" alt="Logo" width="70" height="70" aria-label="Logo du site web">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" title="Accueil" aria-current="page" href="index.html" aria-label="Accueil de la page">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="culture.html">Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="gastronomie.html">Gastronomie</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="Rechercher">
+            <input class="form-control me-2" type="Rechercher" placeholder="Rechercher" aria-label="Rechercher">
+
+
+          </form>
+          <a href="connexion.html">
+            <button class="btn btn-outline-primary" type="submit">Connexion</button>
+          </a>
+          <span style="margin-right: 10px;"></span>
+          <a href="formulaire.Inscription.html">
+            <button class="btn btn-outline-primary" type="submit">Inscription</button>
+          </a>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <br>
+  <br>
+  <br>
+    <main>
+        <h1>Les Mentions Légales</h1>
+        <h2>Introduction au site</h2>
+        <p>Les conditions générales d'utilisation informent tout les utilisateurs et les visiteurs de ce site des
+            services proposés, de la relation entre les utilisateurs et les responsables du site, des droits et
+            responsabilités applicables à l'utilisation du site.</p>
+        <h3>1-Un site consultatif</h3>
+        <p>Le site est destiné à la diffusion de l’information sur la ville de Paris tel que les services, les plats
+            traditionnels préférés des habitants ou encore sur les monuments historiques de la ville. Sur l’ensemble du
+            Site, hors page spécifique, Welcome to Paris est seule à éditer du contenu, considéré comme toute
+            information, élément, texte, vidéo, photo, image, infographie constituant le site.</p>
+        <h2>Confidentialité et protection des données</h2>
+        <h3>2-1-Les données à caractère personnel</h3>
+        <p>Les données recueillies proviennent :</p>
+        <p>- de la communication de l'adresse electronique lors d'un dépôt d'un message;</p>
+        <p>- du remplissage d'un formulaire;</p>
+        <p>- ou bien de la participation à un sondage sur le site.</p>
+        <p>Ces informations ne seront communiqués que par l'acceptation de l'utilisateur.</p>
+        <h3>2-2-Les droits d'accès, de modification ou de suppression</h3>
+        <p>Le règlement UE/2016 du 27 avril 2016 relatif à la protection des données à caractère personnel et la loi n°
+            78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés, confère aux Visiteurs ou
+            Contributeurs, personnes physiques, un droit d’accès, de rectification, et d’effacement de ses données.</p>
+        <p>Tout utilisateur peut exercer par courrier à l'adresse suivante :</p>
+        <p>Délégué à la Protection des Données Personnelles</p>
+        <p>Welcome To Paris,
+            69 rue Turbigo,
+            75003 Paris</p>
+        <p>Si un utilisateur estime que ses droits ne sont pas respectés, il peut faire une réclamation auprès de
+            l’autorité de contrôle de la protection des données personnelles :
+            Commission Nationale de l’Informatique et des Libertés (CNIL)
+            3 Place de Fontenoy
+            TSA 80715
+            75334 PARIS CEDEX 07
+        </p>
+        <h2>Les propriétés intellectuelles</h2>
+        <p>Ces contenus étant protégés par le droit d’auteur, toute reproduction est en principe conditionnée à l’accord
+            de Welcome To Paris en vertu de l'article L.122-4 du Code de la Propriété Intellectuelle ;</p>
+        <p>Toutefois, l'article L.122-5 du Code de la Propriété intellectuelle pose le principe selon lequel, « lorsque
+            l'œuvre a été divulguée, l'auteur ne peut interdire la diffusion, même intégrale, par la voie de presse ou
+            de télédiffusion, à titre d'information d'actualité, des discours destinés au public prononcés dans les
+            assemblées politiques, (…), ainsi que dans les réunions publiques d'ordre politique et les cérémonies
+            officielles ».</p>
+        <p>
+            Les contenus rattachés au site Welcome To Paris sont susceptibles de comporter des conditions particulières
+            qu’il convient de respecter le cas échéant (mention de la source, logo à reproduire).
+            En toute hypothèse, la technique de lien profond est proscrite : les pages du site et des sites qui y sont
+            rattachés ne doivent pas être imbriquées à l'intérieur des pages d'un autre site.
+            Les photos et vidéos présentes sur le site Welcome To Paris proviennent de sources différentes. Seuls les
+            détenteurs des droits indiqués dans la mention "Crédits" peuvent en autoriser la reproduction. L'absence de
+            crédit ne sous-entend pas l'autorisation d'utiliser les photos et vidéos publiées.
+            Sauf mentions spécifiques publiées sur chaque sous-domaine, les présentes mentions légales et conditions
+            générales d’utilisation s’appliquent au site Welcome To Paris et à l’ensemble des sous-domaines le
+            composant.</p>
+        <h2>Responsabilités</h2>
+        <h3>3-1-Connexion et services de la partie consultative du site</h3>
+        <p>La Ville de Paris ne peut être tenue responsable de tout dommage issu d'une interruption, d'un
+            dysfonctionnement quel qu'il soit, d'une suspension ou de la cessation du site, et ce pour quelque raison
+            que ce soit ou encore de tout dommage matériel ou immatériel qui résulterait d'une quelconque façon de la
+            connexion au Site. La connexion de l'utilisateur au Site se fait sous son entière responsabilité.</p>
+        <h3>3-2-L'édition du site</h3>
+        <p>L’ensemble des contenus sont produits par Welcome To Paris, qui en est propriétaire.
+            Pour toute réclamation concernant le contenu du site, vous pouvez vous adresser aux responsables du site:
+            BARUA Nirzara
+            69 rue Turbigo
+            75003 PARIS</p>
+        <h2>Modification des conditions générales d'utilisation</h2>
+        <p>Welcome To Paris peut modifier et mettre à jour les présentes Conditions Générales d'Utilisation à tout
+            moment et sans préavis afin notamment de les adapter aux évolutions du site.</p>
+        <h2>Loi applicable et attribution de juridiction</h2>
+        <p>Les présentes Conditions Générales d'Utilisation sont régies par la loi française et l'utilisateur, par son
+            acceptation des présentes, du seul fait de la consultation du Site, donne compétence exclusive aux
+            juridictions françaises du ressort de la cour d’appel de Paris.</p>
+        <h2>Les dispositions d'utilisation</h2>
+        <h3>4-Qui peut utiliser le service ?</h3>
+        <p>Toute personne majeure proposant s'inscrivant sur Welcome To paris peut créer un compte ou éditer un contenu
+            sur le site. Toute personne physique ayant autorité pour agir au nom de l’entité pour laquelle elle agit et
+            qu’elle représente peut créer un compte ou éditer un contenu sur le site au nom de l’entité. L’entité est
+            réputée avoir accepté les termes des
+            présentes Conditions Générales d’Utilisation.</p>
+        <h2>L'équipe Welcome To Paris</h2>
+        <p>Ce site à été créé par :</p>
+        <p>- Nirzara</p>
+        
+
+</main>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

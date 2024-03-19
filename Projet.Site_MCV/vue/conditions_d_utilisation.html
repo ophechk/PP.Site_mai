@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <script src="../assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.118.2">
+  <title>Conditions générales d'utilisation du site</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+
+    .bouton-marge {
+      margin-bottom: 15px;
+      
+    }
+
+    main {
+      flex: 1;
+      /* Fait en sorte que le contenu de la page prenne tout l'espace disponible */
+      padding: 30px;
+    }
+
+
+    footer {
+      background-color: #000;
+      /* Fond noir pour le footer */
+      color: #fff;
+      /* Couleur du texte dans le footer */
+      padding: 10px;
+      text-align: center;
+      bottom: 0;
+      /* Aligner le bas du footer avec le bas de la fenêtre */
+      left: 0;
+      /* Aligner le côté gauche du footer avec le côté gauche de la fenêtre */
+      right: 1;
+      /* Aligner le côté droit du footer avec le côté droit de la fenêtre */
+      width: calc(100% - 40px);
+      /* Largeur du bandeau du footer, ajustable selon vos besoins */
+      margin: 0 auto;
+      /* Centrer le footer horizontalement */
+    }
+
+    
+    .nav-item {
+      display: inline-block;
+      /* Affiche les éléments li en ligne */
+      margin-right: 10px;
+      /* Espacement entre les éléments */
+
+    }
+
+    .button-container button {
+      display: inline-block;
+      /* Pour placer les boutons en ligne */
+      margin-right: 10px;
+      /* Espacement entre les boutons */
+    }
+    
+    strong {
+      color: black;
+    }
+      
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/photos/logo.png"></a> 
+        <a href="index.html">
+        <img src="/photos/logo.png" alt="Logo" width="70" height="70" aria-label="Logo du site web">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" title="Accueil" aria-current="page" href="index.html" aria-label="Accueil de la page">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="culture.html">Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="gastronomie.html">Gastronomie</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="Rechercher">
+            <input class="form-control me-2" type="Rechercher" placeholder="Rechercher" aria-label="Rechercher">
+
+
+          </form>
+          <a href="connexion.html">
+            <button class="btn btn-outline-primary" type="submit">Connexion</button>
+          </a>
+          <span style="margin-right: 10px;"></span>
+          <a href="formulaire.Inscription.html">
+            <button class="btn btn-outline-primary" type="submit">Inscription</button>
+          </a>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+<br>
+<br>
+<main>
+    <h1><strong>Conditions Générales d'Utilisation du Site www.welcometoparis.com</strong></h1>
+    <br>
+    <h4>Les Conditions Générales d'Utilisation sont à jour au 7 mars 2024</h4>
+        
+       <p> La société Welcome to Paris propose des prestations touristiques, en particulier des excursions, des circuits, des visites, des activités de loisirs et de découverte gastronomiques et culturelles, directement ou par l’intermédiaire de ses sites affiliés (ci-après les « Services »).</p>
+    
+
+    <h3>Mentions légales</h3>
+    <p>Le site Internet www.welcometoparis.com (ci-après le « Site ») est édité par : la société Welcome to Paris, SAS au capital de 6 072 000 euros, dont le siège social est situé au  69 rue Turbigo,  75004 Paris et immatriculée au Registre du Commerce et des Sociétés de Paris sous le n°421 197 005 (ci-après « la Société »).
+
+        Son numéro de TVA intracommunautaire est le : FR60421197005. 
+        
+        La Société peut être contactée par email à l’adresse suivante : booking@pariscityvision.com ou par téléphone au numéro suivant : 01.44.55.60.00 
+        
+        Le Directeur de la publication est : Hervé Mouyal 
+        
+        Le Site est hébergé par la société ANIL INFORMATION SYSTEMS, au capital de 38 868euros, immatriculée au Registre du Commerce et des Sociétés de Créteil sous le numéro_ B 500 139 274, dont le siège social est situé 2, avenue Herbillon - 94 160 Saint Mandé. Son numéro de téléphone est le suivant : 01 75 43 22 22
+        
+        La Société est immatriculée au registre d’Atout France sous le numéro n°IM075120024.
+        
+        La Société dispose d’une garantie financière auprès de l’APST (15, avenue Carnot, 75017 Paris).
+        
+        La Société a souscrit un contrat d’assurance responsabilité civile générale auprès de la compagnie MMA ENTREPRISE, située 19-21 avenue de l’Europe à Clichy.
+    </p>
+    
+<h3>ACCEPTATION DES CONDITIONS D'UTILISATION</h3>
+<p>Le présent document a pour objet de définir les modalités et conditions (ci-après « Conditions Générales d’Utilisation » ou « CGU ») dans lesquelles la Société met à la disposition des utilisateurs (ci-après les « Utilisateurs »), la possibilité de naviguer et d’utiliser le Site.
+
+    L’utilisation du Site implique l’adhésion pleine, entière et sans réserve aux présentes CGU.
+    
+    La Société se réserve le droit de modifier à tout moment les présentes CGU et d’en informer les Utilisateurs par tous moyens. Ces modifications entrent en vigueur dès leur mise en ligne sur le Site. L’Utilisateur est invité à s’informer sur de telles modifications. Si l’Utilisateur n’accepte pas ces modifications, il est invité à ne pas utiliser le Site.
+</p>
+
+<h3>UTILISATION DU SITE</h3>
+
+<p>Avant toute utilisation du Site, l’Utilisateur doit s’assurer qu’il dispose des moyens techniques et informatiques lui permettant de naviguer et d’utiliser le Site. Il doit également s’assurer que la configuration informatique de son matériel/équipement est en bon état de fonctionnement et ne contient pas de virus.
+
+</p>
+
+<h3></h3>
+<p>La Société se réserve le droit de modifier, réviser, supprimer, valider ou changer, intégralement ou en partie, tout contenu (« Contenu ») figurant sur le Site ou affiché sur celui-ci.
+
+La Société peut supprimer, changer ou modifier le Site et/ou les Contenus à tout moment et sans préavis.</p>
+
+<h3>OBLIGATIONS DE L’UTILISATEUR</h3>
+<p>En utilisant le Site, les Utilisateurs conviennent :
+    -    de s’abstenir d’utiliser le Site de manière illégale, pour toute finalité illégale ou de manière incompatible avec les présentes CGU ;
+    -    de ne pas utiliser le Site pour la publication de propos injurieux, diffamants, harcelants, diffamatoires, obscènes, pornographiques ou menaçants, et/ou portant atteinte à la vie privée d’autrui ;
+    -    de ne pas vendre, copier, reproduire, louer, prêter, distribuer, transférer ou concéder des sous-licences sur tout ou partie des éléments, informations et Contenus figurant sur le Site et/ou permettre à tout tiers d’utiliser ou d’avoir accès au Site à quelque fin que ce soit ou de décompiler, désosser, désassembler, modifier, afficher sous forme lisible par l’Utilisateur, tenter de découvrir tout code source ou utiliser tout logiciel activant ou comprenant toute partie du Site ;
+    -    de respecter les autres Utilisateurs ;
+    -    de ne pas collecter et stocker des données personnelles afférentes aux autres Utilisateurs, à toutes fins ;
+    -    de ne pas diffuser de contenus qui pourraient être constitutifs d'incitation à la réalisation de crimes ou délits ; de provocation à la discrimination, à la haine raciale, et plus généralement qui pourraient être contraires aux lois et règlements en vigueur, aux présentes règles d'utilisation et aux bonnes mœurs et à l’ordre public ;
+    -    de ne pas diffuser d'informations d'ordre idéologique, religieux, politique ou de revendication ethnique ;
+    -    de ne pas diffuser de contenus susceptibles de mettre en péril des mineurs notamment la diffusion de messages à caractère violent ou pornographique ;-    de ne pas tenter d'induire en erreur d'autres Utilisateurs en usurpant le nom ou le pseudo d'autres personnes ;
+    -    de ne pas afficher, transmettre par email ou de toute autre manière tout élément violant tout brevet, marque déposée, secret de fabrication, droit de propriété intellectuelle ou tout autre droit de propriété appartenant à autrui ;
+    -    de ne pas afficher, transmettre par email ou de toute autre manière une publicité ou tout matériel promotionnel non sollicité ou non autorisé (notamment se livrer à du « spam », ou toute autre forme de sollicitation) ;
+    -    de ne pas utiliser le Site à des fins abusives en y introduisant volontairement des virus ou tout autre programme malveillant et de tenter d’accéder de manière non autorisée au Site ;
+    -    de ne pas dénigrer le Site et/ou la Société et/ou les autres Utilisateurs sur les réseaux sociaux ou tout autre moyen de communication.
+    
+    Si, pour un quelconque motif, la Société considère que les Utilisateurs ne respectent pas les présentes CGU, elle peut à tout moment, et à son entière discrétion, supprimer leur accès au Site et prendre toutes mesures incluant toute action judiciaire à leur encontre.
+</p>
+
+<h3>EXACTITUDE ET LICEITE DES INFORMATIONS</h3>
+<p>Chaque Utilisateur s’engage à ce que toutes les informations, notamment celles le concernant, qu’il fournit soient adéquates, exactes, à jour et complètes. Pour ce faire, il s’engage à les mettre à jour régulièrement.
+
+    L’Utilisateur reconnaît que la Société ne dispose pas des moyens matériels de vérifier la véracité de toutes les informations présentes sur le Site. La Société ne peut donc être tenue pour responsable en cas d'usurpation d'identité, ou du fait que les informations mentionnées soient fausses ou mensongères.
+    
+    La Société ne garantit pas non plus l'opportunité, la licéité, la probité ou la qualité des informations transmises par les Utilisateurs.
+    
+    La Société ne pourra en aucun cas être tenue pour responsable des contenus que les Utilisateurs communiquent et mettent en ligne, notamment de leur caractère illégal au regard de la réglementation en vigueur, d'erreur ou d'omission, de toute perte ou dommage consécutifs à leur utilisation, transmission par la messagerie interne ou de toute autre manière via le Site.
+</p>
+
+
+<h3>DONNÉES PERSONNELLES</h3>
+<p>Les dispositions concernant la protection des données personnelles telles qu’issues de la Loi Informatique et Libertés en date du 6 janvier 1978 telle que modifiée et du Règlement européen sur la protection des données personnelles du 27 avril 2016 entré en vigueur le 25 mai 2018 (« RGPD ») sont situées dans un document annexe intitulé « Politique de Confidentialité » accessible sur le Site.
+   
+</p>
+
+<h3>PROPRIÉTÉ INTELLECTUELLE</h3>
+<p>En accédant au Site, les Utilisateurs reconnaissent expressément que le Site et les Contenus créés par la Société et mis à la disposition des Utilisateurs sont la propriété exclusive de la Société et sont protégés par le Code de la propriété intellectuelle français ainsi que par les traités et accords internationaux applicables relatifs à la protection des droits de propriété intellectuelle. A ce titre, ils ne peuvent être reproduits sans autorisation expresse de la Société sous peine de poursuites judiciaires civiles et pénales.
+
+    La Société est seule titulaire de tous les droits, titres et intérêts portant sur le Site et les Contenus, y compris tous droits de propriété intellectuelle incluant, notamment, tous droits relatifs aux droits d’auteur, droits des dessins et modèles, marques, enseignes, noms commerciaux, dénomination sociale, noms de domaine, technologie, savoir-faire, procédés, formules, codes sources et codes exécutables, données et droits similaires, y compris les informations relatives à toute demande, tout enregistrement ou tout renouvellement de ceux-ci qui pourront être protégés par les lois, règlements ou règles en matière de propriété intellectuelle de tout pays.
+    
+    La Société concède une licence non exclusive aux Utilisateurs afin de pouvoir utiliser le Site et les Contenus dans le strict cadre de ces CGU.
+    
+    Sont expressément interdits, toute reproduction, représentation, adaptation, exploitation, distribution, diffusion, utilisation commerciale, traduction, arrangement, transformation ou toute création d’œuvres dérivées ou composites de tout ou partie des œuvres et/ou tout autre Contenu figurant sur le Site sur quelque support que ce soit et par tout procédé que ce soit, actuel ou futur. Ces agissements sont susceptibles de constituer des actes de contrefaçon sanctionnés pénalement et civilement, engageant la responsabilité de leur auteur.
+    
+    L’extraction systématique et répétée des informations et Contenus figurant sur le Site est strictement interdite et sanctionnée au titre du droit de la propriété intellectuelle et du droit sui generis des bases de données. Toute extraction illicite pourra engager la responsabilité civile et pénale de son auteur.
+    
+     « CITYVISION » et tous autres marques et logos de la Société sont des marques protégées par le droit de la propriété intellectuelle français (ci-après collectivement dénommées les « Marques »). Sauf autorisation écrite et expresse de la Société, l’Utilisateur s’engage à ne pas utiliser ou diffuser de quelque manière que ce soit les Marques.
+</p>
+
+
+<h3>RESPONSABILITE</h3>
+<p>La Société décline toute responsabilité pour tout dommage résultant d’une intrusion frauduleuse d’un tiers, en dehors de son contrôle, ayant entraîné une modification ou altération des informations/Contenus figurant sur le Site ou ayant porté préjudice à tout Utilisateur du présent Site ; et plus généralement pour tout dommage, quelles qu’en soient les causes, origines, nature ou conséquences, provoqué à raison de l’accès de quiconque au Site ou de l’impossibilité d’y accéder, en dehors de son contrôle.
+
+La Société ne peut en aucun cas être tenue pour responsable des problèmes ou défaillances techniques liés aux réseaux de téléphonie, aux systèmes informatiques en ligne, aux serveurs, aux fournisseurs d'Internet, à l'équipement informatique et/ou aux logiciels des Utilisateurs.
+</p>
+
+
+<h3>LIENS</h3>
+<p>Les liens hypertextes établis sur le Site vers d'autres sites Internet ou d'autres sources ou contenus Internet (les « Sources externes ») ne sauraient engager la responsabilité de la Société.
+
+    Dans la mesure où la Société ne peut contrôler ces Sources externes, l’Utilisateur reconnaît que la Société ne peut être tenue pour responsable de la mise à disposition de ces Sources externes, et ne peut supporter aucune responsabilité quant aux contenus, publicités, produits, services ou tout autre matériel disponible sur ou à partir de ces Sources externes.
+</p>
+
+
+<h3><strong>DROIT APPLICABLE ET JURIDICTION COMPETENTE</strong></h3>
+<p>Les présentes CGU sont régies et interprétées conformément au droit français, sans tenir compte des principes de conflits de lois.
+
+    En cas de litige susceptible de survenir à l’occasion de l’interprétation et/ou de l’exécution des présentes ou en relation avec les présentes CGU, l’Utilisateur peut décider de soumettre le litige avec la Société à une procédure de médiation conventionnelle ou tout autre mode alternatif de règlement des différends. L’Utilisateur peut notamment prendre contact avec : MTV Médiation Tourisme Voyage, BP 80 303 - 75 823 Paris Cedex 17 https://www.mtv.travel  - https://www.mtv.travel/quand_et_comment_saisir/
+    
+    L’Utilisateur est informé que :
+    -    Pour que le différend puisse être examiné par le médiateur, l’Utilisateur devra justifier qu'il a effectué une réclamation écrite faite auprès de la Société ou de son service clientèle et devra garder une preuve écrite des démarches effectuées ;
+    -    La demande devra être fondée et légitime.
+    
+    L’Utilisateur pourra saisir le médiateur dans un délai maximum d'un an suivant sa réclamation écrite à la Société.
+    
+    Enfin, en cas d’échec de cette procédure de médiation ou si l’Utilisateur souhaite saisir une juridiction, les règles du Code de procédure civile s’appliqueront.
+</p>
+
+
+<h3>CONTACT</h3>
+<p>La Société peut être contactée, à tout moment, par courriel à l'adresse email suivante : booking@pariscityvision.com  ou par téléphone au numéro suivant : 01.44.55.60.00.</p>
+
+</main>
+
+</body>
+</html>

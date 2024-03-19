@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de pre-inscription</title>
+    <link rel="stylesheet" href="">
+    <style>
+        /* Notre style CSS ici */
+   
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family:'Poppins', sans-serif;
+}
+body{
+background-color: #d0bdde;
+display: flex;
+align-items: center;
+justify-content: center;
+height:100vh;
+}
+form{
+display: flex ;
+flex-direction: column;
+background-color: #fff;
+padding: 40px;
+border-radius: 6px;
+box-shadow: 0 0 10px  rgba(0,0,0,0.2);
+}
+h4{
+text-align: center;
+font-size: 20px;
+}
+hr{
+margin: 10px 0;
+background-color: #ccc;
+border:0;
+height: 1px;
+width: 100%;
+}
+.name-field {
+display: flex;
+width: 60%;
+justify-content: space-between;
+}
+.name-field div {
+display: flex;
+flex-direction: column;
+}
+.name-field div {
+width: 49%;
+}
+label{
+margin-bottom: 10px;
+}
+input{
+margin-bottom: 5px;
+padding:5px;
+outline:0;
+border: 1px solid rgba(0,0,0,0.4);
+}
+input:focus{
+border: 1px solid #000000;
+}
+
+input[type="submit"]{
+margin-top: 15px;
+background-color: #000000;
+color:#fff;
+border:1px solid #000000;
+cursor: pointer;
+}
+
+  
+p {
+text-align: center;
+margin: 5px 0;
+font-size: 14px;
+}
+p  a {
+text-decoration: 0;
+color:#460079;
+}
+
+p  a:hover {
+text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+<form action="">
+    <br>
+    <h4>PRÉ-INSCRIPTION</h4>
+    <hr>
+    <div class="name-field">
+        
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" aria-describedby="aide-nom" tabindex="1">
+
+  
+    </div>
+    <br>
+    <div>
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom" id="prenom" tabindex="2">
+    </div>
+    <br>
+    <div style="background-color: #ffffff;">
+        
+        <label for="pays">Pays :</label>
+        <select id="pays" name="pays" tabindex="3" required>
+            <optgroup label="Europe">
+                <option value="albanie">Albanie</option>
+                <option value="allemagne">Allemagne</option>
+                <option value="andorre">Andorre</option>
+                <option value="armenie">Arménie</option>
+                <option value="autriche">Autriche</option>
+                <option value="belgique">Belgique</option>
+                <option value="biélorussie">Biélorussie</option>
+                <option value="bosnie-herzegovine">Bosnie-Herzégovine</option>
+                <option value="bulgarie">Bulgarie</option>
+                <option value="chypre">Chypre</option>
+                <option value="croatie">Croatie</option>
+                <option value="danemark">Danemark</option>
+                <option value="espagne">Espagne</option>
+                <option value="estonie">Estonie</option>
+                <option value="finlande">Finlande</option>
+                <option value="france">France</option>
+                <option value="georgie">Géorgie</option>
+                <option value="grece">Grèce</option>
+                <option value="hongrie">Hongrie</option>
+                <option value="irlande">Irlande</option>
+                <option value="islande">Islande</option>
+                <option value="italie">Italie</option>
+                <!-- Ajoutez d'autres pays européens selon vos besoins -->
+            </optgroup>
+            <optgroup label="Amérique">
+           
+    <option value="argentine">Argentine</option>
+    <option value="bahamas">Bahamas</option>
+    <option value="barbade">Barbade</option>
+    <option value="belize">Belize</option>
+    <option value="bolivie">Bolivie</option>
+    <option value="bresil">Brésil</option>
+    <option value="canada">Canada</option>
+    <option value="chili">Chili</option>
+    <option value="colombie">Colombie</option>
+    <option value="costa-rica">Costa Rica</option>
+    <option value="cuba">Cuba</option>
+    <option value="dominique">Dominique</option>
+    <option value="equateur">Équateur</option>
+    <option value="etats-unis">États-Unis</option>
+    <option value="grenade">Grenade</option>
+    <option value="guatemala">Guatemala</option>
+    <option value="guyana">Guyana</option>
+    <option value="haiti">Haïti</option>
+    <option value="honduras">Honduras</option>
+    <option value="jamaique">Jamaïque</option>
+    <option value="mexique">Mexique</option>
+    <option value="nicaragua">Nicaragua</option>
+    <option value="panama">Panama</option>
+    <option value="paraguay">Paraguay</option>
+    <option value="perou">Pérou</option>
+    <option value="salvador">Salvador</option>
+    <option value="surinam">Suriname</option>
+    <option value="uruguay">Uruguay</option>
+    <option value="venezuela">Venezuela</option>
+        </optgroup>
+            
+            <optgroup label="Asie">
+                <option value="afghanistan">Afghanistan</option>
+                <option value="armenie">Arménie</option>
+                <option value="bangladesh">Bangladesh</option>
+    <option value="bhoutan">Bhoutan</option>
+    <option value="birmanie">Birmanie</option>
+    <option value="cambodge">Cambodge</option>
+    <option value="chine">Chine</option>
+    <option value="coree-du-nord">Corée du Nord</option>
+    <option value="coree-du-sud">Corée du Sud</option>
+                <option value="inde">Inde</option>
+                <option value="japon">Japon</option>
+                <option value="kazakhstan">Kazakhstan</option>
+            </optgroup>
+
+            
+            <optgroup label="Afrique">
+                <option value="algerie">Algérie</option>
+                <option value="angola">Angola</option>
+                <option value="benin">Bénin</option>
+                <option value="botswana">Botswana</option>
+            </optgroup>
+            
+            <optgroup label="Océanie">
+            <option value="australie">Australie</option>
+            <option value="fidji">Fidji</option>
+        </optgroup>
+        </select>
+    </div>
+    
+    <br>
+    <label for="email">Adresse Mail</label>
+    <input type="email" id="email" tabindex="4">
+    <label for="motpasse" class='cartouche'>Mot de passe : </label>
+    <input class='cartouche' name="motpasse" type ='password' size="50" tabindex="5" />
+    <label for="repmotpasse" class='cartouche'>Répétez votre mot de passe</label>
+    <input class='cartouche' name="repmotpasse" type ='password' size="10" tabindex="6" />
+    <input type="submit" value="S'inscrire" tabindex="7" aria-label="Cliquer le bouton pour s'inscrire">
+    <p>Vous avez déjà un compte ? <a href="connexion.html" tabindex="8">Se connecter</a></p>
+</form>
+
+</body>
+</html>
